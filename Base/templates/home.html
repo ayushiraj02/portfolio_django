@@ -1,0 +1,481 @@
+{% load static%}
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portf</title>
+    <link rel="icon" type="image/x-icon" href="./Images/favicon.jpeg" />
+    <link rel="stylesheet" href="{%static 'css/style.css'%}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+  <body>
+    `
+
+    <!-- Navbar Section -->
+    <nav id="navbar" class="flex s-around bg-color">
+      <div class="left-nav">
+        <h2 class="t-white">Portfolio</h2>
+      </div>
+      <div class="right-nav">
+        <ul class="flex">
+          <li>
+            <a href="#home" class="t-white roboto"
+              >Home <i class="fa-solid fa-house"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#about" class="t-white roboto"
+              >About Me <i class="fa-solid fa-user"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#skills" class="t-white roboto"
+              >Skills <i class="fa-solid fa-code"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#Projects" class="t-white roboto"
+              >Projects <i class="fas fa-project-diagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#Contact" class="t-white roboto"
+              >Contact <i class="fa-solid fa-rocket"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="flex s-around sw-80 m-auto">
+      <div class="home-left flex items-center">
+        <div class="home-content">
+          <h6 class="poppinss">Hi, I'm</h6>
+          <h1 class="t-white">Ayushi Raj</h1>
+          <h4 class="poppinss">Python Developer</h4>
+          <!-- <a href="{% static 'pdf/django.pdf' %}"  target="_blank"> -->
+          <!-- <button class="btn poppins">Resume</button></a> -->
+
+          <a
+            href="https://drive.google.com/file/d/1TaKM26WzFzaZUBdtoJnOGDJSYH_15q3n/view"
+            target="_blank"
+          >
+            <button class="btn poppins">Resume</button></a
+          >
+
+          <a
+            class="btn live poppins"
+            id="hireme"
+            href="#Contact"
+            target="_blank"
+            >Let's Talk</a
+          >
+        </div>
+      </div>
+      <div class="home-right flex s-center items-center">
+        <div class="circle flex s-center items-center" id="mainImage">
+          <img src="{% static 'images/mypic.jpg'%}" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h1 class="t-center my-2 t-white f-2">About Me</h1>
+      <div class="about-container flex s-around">
+        <div class="about-left flex s-center items-center">
+          <!-- Here in src replade the given link with your secondary image link -->
+          <img src="{%static 'images/dog.png'%}" alt="" style="width: 60%" />
+        </div>
+
+        <div class="about-right flex">
+          <div class="about-content">
+            <h1 class="t-white m-b-1 poppins">Ayushi Raj</h1>
+            <p class="t-white poppins">
+              I am Ayushi Raj, a dedicated Python Developer with a strong
+              foundation in Computer Science and a passion for solving complex
+              problems through code. With hands-on experience in Python
+              frameworks like Flask and Django, I specialize in building
+              efficient, scalable web applications and APIs. My technical
+              expertise spans data analysis, machine learning, and artificial
+              intelligence, enabling me to design innovative solutions that
+              drive business value.
+              <br /><br />
+              In my professional journey, I have developed and deployed
+              applications on cloud platforms like AWS and Vercel, ensuring
+              seamless performance and reliability. I thrive in dynamic
+              environments where I can contribute through collaboration,
+              adaptability, and my commitment to continuous learning. As a
+              Python Developer, I am eager to leverage my skills to create
+              impactful solutions that bridge technology and user needs.
+            </p>
+            <a class="btn" id="hireme" href="#Contact">Hire Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section
+        <section id="education">
+            <h1 class="t-center my-2 t-white f-2">Education</h1>
+            <div class="education-container flex s-around">
+                <div class="education-left flex s-center items-center">
+                    <img src="{%static 'images/education_image.png'%}" alt="Education Image" style="width: 60%;">
+                </div>
+
+                <div class="education-right flex">
+                    <div class="education-content">
+                        <h2 class="t-white m-b-1 poppins">Bachelor's in Computer Science</h2>
+                        <p class="t-white poppins">
+                            <strong>University Name:</strong> XYZ University<br>
+                            <strong>Location:</strong> City, Country<br>
+                            <strong>Graduation Year:</strong> 2025<br>
+                            <strong>Key Subjects:</strong> Data Structures, Algorithms, Machine Learning, Web Development, Python Programming.<br>
+                            <strong>Achievements:</strong> Dean's List, Excellent Academic Performance, etc.<br>
+                            <br>
+                            I am currently pursuing my Bachelor's in Computer Science, with a strong focus on software development and machine learning. Throughout my academic journey, I have gained both theoretical and practical knowledge in the field of computer science, enabling me to apply these concepts to real-world projects.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline-section">
+      <h1 class="t-center my-2 t-white f-2">Timeline</h1>
+      <div class="timeline-container flex s-center">
+        <!-- Education Section -->
+        <div class="projects-item flex f-col s-center items-center">
+          <h2 class="t-white poppins">Education</h2>
+          <ul class="timeline-list">
+            <li class="timeline-event">
+              <div class="timeline-card">
+                <span class="t-white">2017 - 2018</span>
+                <div class="timeline-details">
+                  <h3 class="t-white">St. Joseph's Convent High School</h3>
+                  <p class="t-white">X | Grade: 89%</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-event">
+              <div class="timeline-card">
+                <span class="t-white">2018 - 2020</span>
+                <div class="timeline-details">
+                  <h3 class="t-white">Sri Chaitanya Techno School</h3>
+                  <p class="t-white">XII | Grade: 75%</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-event">
+              <div class="timeline-card">
+                <span class="t-white">2020 - 2024</span>
+                <div class="timeline-details">
+                  <h3 class="t-white">IKGPTU, Punjab</h3>
+                  <p class="t-white">CSE | Grade: 84.2%</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Experience Section -->
+        <div class="projects-item flex f-col s-center items-center">
+          <h2 class="t-white poppins">Experience</h2>
+          <ul class="timeline-list">
+            <li class="timeline-event">
+              <div class="timeline-card">
+                <span class="t-white">Jan 2025 - Present</span>
+                <div class="timeline-details">
+                  <h3 class="t-white">Python Developer</h3>
+                  <p class="t-white">Ameotech Infrotech, Mohali</p>
+                  <p class="t-white">
+                    Worked on various Python frameworks and developed scalable
+                    applications for different clients.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <br />
+            <li class="timeline-event">
+              <div class="timeline-card">
+                <span class="t-white">Aug 2024 - Dec 2024</span>
+                <div class="timeline-details">
+                  <h3 class="t-white">Jr. Data Scientist</h3>
+                  <p class="t-white">AiInfox, Mohali</p>
+                  <p class="t-white">
+                    Assisted in building machine learning models for data
+                    analysis and prediction tasks.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <br />
+            <li class="timeline-event">
+              <div class="timeline-card">
+                <span class="t-white">Jan 2024 - July 2024</span>
+                <div class="timeline-details">
+                  <h3 class="t-white">Data Analyst</h3>
+                  <p class="t-white">eNest Technologies Pvt Ltd, Mohali</p>
+                  <p class="t-white">
+                    Analyzed complex datasets to extract insights, created
+                    visualizations, and optimized strategies.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h1 class="t-center my-2 t-white f-2">Skills</h1>
+      <div class="services-container flex s-around h-50">
+        <div class="skills-left flex s-center items-center">
+          <img src="{%static 'images/pro.png'%}" alt="" />
+        </div>
+
+        <div class="skills-right flex items-center">
+          <div class="skillss-container">
+            <div class="java bar p-relative">
+              <span class="bar-content left t-white"> Python</span
+              ><span class="bar-content right-skills t-white">90%</span>
+            </div>
+
+            <div class="html bar p-relative">
+              <span class="bar-content left t-white">Machine Learning</span
+              ><span class="bar-content right-skills t-white">90%</span>
+            </div>
+
+            <div class="css bar p-relative">
+              <span class="bar-content left t-white">Data Analysis</span
+              ><span class="bar-content right-skills t-white">85%</span>
+            </div>
+
+            <div class="js bar p-relative">
+              <span class="bar-content left t-white">Data Visualization</span
+              ><span class="bar-content right-skills t-white">80%</span>
+            </div>
+
+            <div class="python bar p-relative">
+              <span class="bar-content left t-white">MySQL </span
+              ><span class="bar-content right-skills t-white">70%</span>
+            </div>
+
+            <div class="mysql bar p-relative">
+              <span class="bar-content left t-white">HTML & CSS</span
+              ><span class="bar-content right-skills t-white">40%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="Projects">
+      <h1 class="t-center my-2 t-white f-2">Projects</h1>
+      <div class="projects-container flex s-center">
+        <!-- Stock Price Forecasting System -->
+        <div class="projects-item flex f-col s-center items-center">
+          <h1 class="t-white poppins">Stock Price Forecasting System</h1>
+          <p class="t-white poppins">
+            Built a predictive model using the Random Forest algorithm to
+            forecast daily stock prices, including Open, High, Low, and Close
+            values. The project involved creating a user-friendly web interface
+            with HTML, CSS, and JavaScript to allow easy data input and
+            visualization.It provided accurate predictions, ensuring an
+            intuitive user experience.
+          </p>
+          <div class="buttons flex s-around">
+            <a href="#" target="_blanks" class="btn mx-1 m-top">GitHub</a>
+            <a href="#" target="_blanks" class="btn m-top live">Live Link</a>
+          </div>
+        </div>
+
+        <!-- Predict New Medicines with BELKA -->
+        <div class="projects-item flex f-col s-center items-center">
+          <h1 class="t-white poppins">Predict New Medicines</h1>
+          <p class="t-white poppins">
+            Developed ML models using the BELKA dataset to predict the binding
+            affinities of small molecules to specific protein targets,crucial
+            component in the field of computational drug discovery.By leveraging
+            advanced ML and DL techniques, I accelerated the process of
+            identifying promising drug candidates,significantly contributing to
+            advancement in computational drug design and prediction.
+          </p>
+          <div class="buttons flex s-around">
+            <a href="#" target="_blanks" class="btn mx-1 m-top">GitHub</a>
+            <a href="#" target="_blanks" class="btn m-top live">Live Link</a>
+          </div>
+        </div>
+
+        <!-- Flood Prediction -->
+        <div class="projects-item flex f-col s-center items-center">
+          <h1 class="t-white poppins">Flood Prediction</h1>
+          <p class="t-white poppins">
+            Enrolled in Kaggle competition of flood predition where I trained,
+            and optimized ML model to predict flood events based on complex
+            meteorological data. I pre-processed and analyzed large datasets to
+            enhance the accuracy of the flood forecasts. The model achieved a
+            top percentile ranking, providing highly accurate predictions that
+            can be used in disaster management for timely responses to potential
+            flood events.
+          </p>
+          <div class="buttons flex s-around">
+            <a href="#" target="_blanks" class="btn mx-1 m-top">GitHub</a>
+            <a href="#" target="_blanks" class="btn m-top live">Live Link</a>
+          </div>
+        </div>
+
+        <!-- Blog Project -->
+        <div class="projects-item flex f-col s-center items-center">
+          <h1 class="t-white poppins">Blogging Web Project</h1>
+          <p class="t-white poppins">
+            Developed a dynamic blogging platform using Python Django, allowing
+            users to create, read, update, and delete blog posts. The platform
+            includes features such as user authentication, comment sections, and
+            categorized posts. This project demonstrates my expertise in
+            building scalable, user-centered web applications with Django, while
+            focusing on providing a rich user experience and robust
+            functionality.
+          </p>
+          <div class="buttons flex s-around">
+            <a href="#" target="_blanks" class="btn mx-1 m-top">GitHub</a>
+            <a href="#" target="_blanks" class="btn m-top live">Live Link</a>
+          </div>
+        </div>
+
+        <!-- ChatRoom (WhatsApp-like) -->
+        <div class="projects-item flex f-col s-center items-center">
+          <h1 class="t-white poppins">ChatRoom Web App</h1>
+          <p class="t-white poppins">
+            Built a real-time chat application similar to WhatsApp using Python
+            Django and WebSockets, enabling seamless live communication between
+            users. Key features of the app include user registration, chat
+            rooms, private messaging. This project highlights my ability to work
+            with real-time data and my skill in developing interactive,
+            high-performance web app using Django.
+          </p>
+          <div class="buttons flex s-around">
+            <a href="#" target="_blanks" class="btn mx-1 m-top">GitHub</a>
+            <a href="#" target="_blanks" class="btn m-top live">Live Link</a>
+          </div>
+        </div>
+
+        <!-- My Portfolio (Django-based) -->
+        <div class="projects-item flex f-col s-center items-center">
+          <h1 class="t-white poppins">My Portfolio</h1>
+          <p class="t-white poppins">
+            My personal portfolio, built with Django, showcases my skills,
+            projects, and experience in web development, with a sleek and
+            minimalist design that reflects my professional style. The portfolio
+            is dynamically managed, allowing me to continuously update and
+            highlight new work as I progress in my career, providing a
+            comprehensive overview of my growth and achievements.
+          </p>
+          <div class="buttons flex s-around">
+            <a href="#" target="_blanks" class="btn mx-1 m-top">GitHub</a>
+            <a href="#" target="_blanks" class="btn m-top live">Live Link</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section id="Contact" class="m-b-1">
+      <h1 class="t-center my-2 t-white f-2">Contact Me</h1>
+      <div class="contact-container flex s-around items-centers">
+        <div class="form" id="contactForm">
+          <form method="post">
+            {% csrf_token %}
+            <div class="name form-div">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="poppins"
+                placeholder="Enter Your Name"
+              />
+            </div>
+
+            <div class="email form-div">
+              <input
+                type="email"
+                name="email"
+                id=""
+                class="poppins"
+                placeholder="Enter Your Email"
+                required
+              />
+            </div>
+
+            <div class="phone form-div">
+              <input
+                type="phone"
+                name="number"
+                id=""
+                class="poppins"
+                placeholder="Enter Your Phone"
+                required
+              />
+            </div>
+
+            <div class="textarea form-div">
+              <textarea
+                name="content"
+                id="textarea"
+                cols="30"
+                rows="10"
+                class="poppins"
+                placeholder="Enter Messages"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn poppins" id="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+      <ul class="flex s-center w-80 m-auto my-2 res">
+        <li><a href="#home" class="poppinss">Home</a></li>
+        <li><a href="#about" class="poppinss">About</a></li>
+        <li><a href="#skills" class="poppinss">Skills</a></li>
+        <li><a href="#projects" class="poppinss">Projects</a></li>
+        <li><a href="#portfolio" class="poppinss">Portfolio</a></li>
+      </ul>
+      <ul class="flex s-center w-80 font-awesome">
+        <a href="mailto:ayushimk14@gmail.com" target="_blank">
+          <li><i class="fa-solid fa-envelope"></i></li>
+        </a>
+        <a href="https://www.linkedin.com/in/ayushiraj02/" target="_blank">
+          <li><i class="fa-brands fa-linkedin-in"></i></li>
+        </a>
+        <a href="https://github.com/ayushiraj02" target="_blank">
+          <li><i class="fa-brands fa-github"></i></li>
+        </a>
+        <a href="" target="_blank">
+          <li><i class="fa-brands fa-instagram"></i></li>
+        </a>
+      </ul>
+      <p class="t-center my-2 poppins">
+        &copy; All Rights Reserved -
+        <span class="cpy-white poppins">Error By Night</span>
+      </p>
+    </footer>
+  </body>
+</html>
